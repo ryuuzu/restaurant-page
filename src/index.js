@@ -1,7 +1,8 @@
 import "./style.css";
 import logoImage from "./kfc-logo.png";
-import bannerImage from "./kfc-nepal-popcorn-nachos-banner.jpg";
 import footerData from "./footer_data.json5";
+import getHome from "./home/home";
+
 
 function getHeader() {
 	const header = document.createElement("header");
@@ -30,28 +31,6 @@ function getHeader() {
 	header.appendChild(ulPageLinks);
 
 	return header;
-}
-
-function getMain() {
-	const main = document.createElement("main");
-
-	const kfcBanner = new Image();
-	kfcBanner.src = bannerImage;
-	kfcBanner.alt = "KFC New Dish Nachos";
-	main.appendChild(kfcBanner);
-
-	const orderRefDiv = document.createElement("div");
-	orderRefDiv.classList.add("order-ref");
-	orderRefDiv.textContent =
-		"Order Today and Get 10% OFF on your first order.";
-
-	const orderRefButton = document.createElement("button");
-	orderRefButton.textContent = "Order Now";
-	orderRefDiv.appendChild(orderRefButton);
-
-	main.appendChild(orderRefDiv);
-
-	return main;
 }
 
 function getFooter() {
@@ -96,5 +75,5 @@ function getFooter() {
 
 const contentDiv = document.querySelector("#content");
 contentDiv.appendChild(getHeader());
-contentDiv.appendChild(getMain());
+contentDiv.appendChild(getHome());
 contentDiv.appendChild(getFooter());

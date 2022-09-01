@@ -1,20 +1,27 @@
 const path = require("path");
 const json5 = require("json5");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-	// mode: "development",
-	entry: "./src/index.js",
+	mode: "development",
+	entry: { index: "./src/index.js", home: "./src/home/home.js" },
 	devtool: "inline-source-map",
 	// devServer: {
 	// 	static: "./dist",
 	// },
 	output: {
-		filename: "index.js",
+		filename: "[name].bundle.js",
 		path: path.resolve(__dirname, "dist"),
+		clean: true,
 	},
-	// optimization: {
-	// 	runtimeChunk: "single",
-	// },
+	plugins: [
+		new HtmlWebpackPlugin({
+			template: "src/index.html",
+		}),
+	],
+	optimization: {
+		runtimeChunk: "single",
+	},
 	module: {
 		rules: [
 			{
