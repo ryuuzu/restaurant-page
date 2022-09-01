@@ -1,0 +1,31 @@
+[
+	{ "Our Menu": ["Deals", "Burgers", "Rice Bowl", "Chicken", "Beverages"] },
+	{
+		"KFC Nepal": [
+			"About",
+			"History",
+			"Careers",
+			"Feedback Form",
+			"Outlets",
+			"KFC Gift Card"
+		]
+	},
+	"Image",
+	{
+		"Our Locations": [
+			"Durbar Marg",
+			"Bouddha",
+			"LABIM Mall, Pulchowk",
+			"BBSM Maharajgunj",
+			"BBSM Thimi",
+			"Central Lakeside, Pokhara",
+			"CG Landmark Mall, Bharatpur",
+			"BBSM Kalanki",
+			"BBSM Naxal",
+			"BBSM Itahari",
+			"BBSM Nepalgunj",
+			"BBSM Hetauda",
+			"Eyeplex Mall, Baneshwor"
+		]
+	}
+]
