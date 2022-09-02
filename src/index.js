@@ -3,6 +3,7 @@ import logoImage from "./kfc-logo.png";
 import footerData from "./footer_data.json5";
 import getHome from "./home/home";
 import getProducts from "./products/products";
+import getAbout from "./about/about";
 
 const contentDiv = document.querySelector("#content");
 
@@ -43,6 +44,12 @@ function getHeader() {
 	const liPageLink2 = document.createElement("li");
 	liPageLink2.textContent = "About";
 	ulPageLinks.appendChild(liPageLink2);
+
+	liPageLink2.addEventListener("click", (e) => {
+		initializeForNewPage();
+		e.target.classList.add("active");
+		header.insertAdjacentElement("afterend", getAbout());
+	});
 
 	const liPageLink3 = document.createElement("li");
 	liPageLink3.textContent = "Contact";

@@ -8,6 +8,7 @@ module.exports = {
 		index: "./src/index.js",
 		home: "./src/home/home.js",
 		products: "./src/products/products.js",
+		about: "./src/about/about.js",
 	},
 	devtool: "inline-source-map",
 	// devServer: {

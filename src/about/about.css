@@ -1,0 +1,65 @@
+main {
+	width: 100%;
+}
+
+.about-text {
+	text-align: center;
+	margin: 70px 20%;
+}
+
+.about-heading {
+	color: #ad1e22;
+}
+
+.about-content {
+	font-size: 19px;
+	font-weight: 500;
+	line-height: 2rem;
+}
+
+.kfc-stats {
+	display: flex;
+	margin-block-end: 100px;
+	background-color: rgba(128, 128, 128, 0.233);
+	padding: 50px 40px;
+	border-radius: 28px;
+	box-shadow: 0 0 5px 5px rgba(128, 128, 128, 0.082);
+}
+
+.kfc-stat {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	flex-direction: column;
+	padding-inline: 50px;
+}
+
+.kfc-stat:first-child {
+	border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.kfc-stat:last-child {
+	border-left: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.kfc-stat:first-child > .kfc-stat-image {
+	width: 41px;
+}
+
+.kfc-stat-image {
+	width: 45px;
+}
+
+.kfc-stat-text {
+	display: flex;
+	gap: 3px;
+	flex-direction: column;
+	align-items: center;
+}
+
+.highlight {
+	margin-top: 5px;
+	font-weight: 700;
+	color: #ad1e22;
+	font-size: 40px;
+}
