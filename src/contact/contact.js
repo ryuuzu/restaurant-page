@@ -79,7 +79,7 @@ export default function getContact() {
 	outletLocationHolder.classList.add("outlet-locations");
 
 	const outletLocationsList = document.createElement("select");
-	outletLocationsList.classList.add('outlet-list')
+	outletLocationsList.classList.add("outlet-list");
 	const outletLocation = document.createElement("div");
 	outletLocation.classList.add("outlet-location");
 
