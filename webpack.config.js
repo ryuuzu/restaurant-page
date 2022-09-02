@@ -9,6 +9,7 @@ module.exports = {
 		home: "./src/home/home.js",
 		products: "./src/products/products.js",
 		about: "./src/about/about.js",
+		contact: "./src/contact/contact.js",
 	},
 	devtool: "inline-source-map",
 	// devServer: {

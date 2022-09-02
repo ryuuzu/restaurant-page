@@ -4,6 +4,7 @@ import footerData from "./footer_data.json5";
 import getHome from "./home/home";
 import getProducts from "./products/products";
 import getAbout from "./about/about";
+import getContact from "./contact/contact";
 
 const contentDiv = document.querySelector("#content");
 
@@ -54,6 +55,12 @@ function getHeader() {
 	const liPageLink3 = document.createElement("li");
 	liPageLink3.textContent = "Contact";
 	ulPageLinks.appendChild(liPageLink3);
+
+	liPageLink3.addEventListener("click", (e) => {
+		initializeForNewPage();
+		e.target.classList.add("active");
+		header.insertAdjacentElement("afterend", getContact());
+	});
 
 	header.appendChild(ulPageLinks);
 
