@@ -30,40 +30,18 @@ header img {
 header ul li {
 	display: inline;
 	padding: 20px;
+	font-size: 18px;
 	list-style: none;
+	cursor: pointer;
+	transition: 300ms ease-in-out;
 }
 
-main {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+header ul li:hover {
+	color: #e3002a88;
 }
 
-main > img {
-	width: 100%;
-}
-
-.order-ref {
-	color: white;
-	width: 80%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	background: #e3002b;
-	border-radius: 15px;
-	margin-block: 100px;
-	padding: 30px 50px;
-	font-size: 30px;
-	font-weight: 600;
-}
-
-.order-ref button {
-	font-family: inherit;
-	font-weight: inherit;
-	border-radius: 10px;
-	border: none;
-	padding: 20px 30px;
-	font-size: 25px;
+header ul li.active {
+	color: #e3002b;
 }
 
 .footer-grid {

@@ -1,4 +1,5 @@
 import bannerImage from "./kfc-nepal-popcorn-nachos-banner.jpg";
+import "./home.css"
 
 export default function getHome() {
 	const main = document.createElement("main");

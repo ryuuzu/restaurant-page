@@ -2,7 +2,9 @@ import "./style.css";
 import logoImage from "./kfc-logo.png";
 import footerData from "./footer_data.json5";
 import getHome from "./home/home";
+import getProducts from "./products/products";
 
+const contentDiv = document.querySelector("#content");
 
 function getHeader() {
 	const header = document.createElement("header");
@@ -19,16 +21,42 @@ function getHeader() {
 	h1Name.textContent = "KFC";
 	headerDiv.appendChild(h1Name);
 
+	headerDiv.addEventListener("click", () => {
+		initializeForNewPage();
+		header.insertAdjacentElement("afterend", getHome());
+	});
+
 	header.appendChild(headerDiv);
 
 	const ulPageLinks = document.createElement("ul");
-	["Browse", "About", "Contact"].forEach((x) => {
-		const liPageLink = document.createElement("li");
-		liPageLink.textContent = x;
-		ulPageLinks.appendChild(liPageLink);
+
+	const liPageLink1 = document.createElement("li");
+	liPageLink1.textContent = "Browse";
+	ulPageLinks.appendChild(liPageLink1);
+
+	liPageLink1.addEventListener("click", (e) => {
+		initializeForNewPage();
+		e.target.classList.add("active");
+		header.insertAdjacentElement("afterend", getProducts());
 	});
 
+	const liPageLink2 = document.createElement("li");
+	liPageLink2.textContent = "About";
+	ulPageLinks.appendChild(liPageLink2);
+
+	const liPageLink3 = document.createElement("li");
+	liPageLink3.textContent = "Contact";
+	ulPageLinks.appendChild(liPageLink3);
+
 	header.appendChild(ulPageLinks);
+
+	function initializeForNewPage() {
+		liPageLink1.classList.remove("active");
+		liPageLink2.classList.remove("active");
+		liPageLink3.classList.remove("active");
+		const oldMain = document.querySelector("main");
+		contentDiv.removeChild(oldMain);
+	}
 
 	return header;
 }
@@ -73,7 +101,6 @@ function getFooter() {
 	return footer;
 }
 
-const contentDiv = document.querySelector("#content");
 contentDiv.appendChild(getHeader());
 contentDiv.appendChild(getHome());
 contentDiv.appendChild(getFooter());

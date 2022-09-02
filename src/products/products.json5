@@ -1,0 +1,32 @@
+[
+	{
+		"name": "COB HC 2 Pieces",
+		"imgsrc": "hc-2",
+		"price": 540.0
+	},
+	{
+		"name": "COB HC 6 Pieces",
+		"imgsrc": "hc-6",
+		"price": 1450.0
+	},
+	{
+		"name": "Smoky Red COB 1 Piece",
+		"imgsrc": "sr-1",
+		"price": 300.0
+	},
+	{
+		"name": "Smoky Red COB 5 Pieces",
+		"imgsrc": "sr-5",
+		"price": 1450.0
+	},
+	{
+		"name": "Classic Zinger Meal",
+		"imgsrc": "cz-meal",
+		"price": 729.0
+	},
+	{
+		"name": "Popcorn Nachos Meal",
+		"imgsrc": "pn-meal",
+		"price": 549.0
+	}
+]
