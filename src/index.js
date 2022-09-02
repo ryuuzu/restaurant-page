@@ -34,33 +34,30 @@ function getHeader() {
 
 	const liPageLink1 = document.createElement("li");
 	liPageLink1.textContent = "Browse";
-	ulPageLinks.appendChild(liPageLink1);
-
 	liPageLink1.addEventListener("click", (e) => {
 		initializeForNewPage();
 		e.target.classList.add("active");
 		header.insertAdjacentElement("afterend", getProducts());
 	});
+	ulPageLinks.appendChild(liPageLink1);
 
 	const liPageLink2 = document.createElement("li");
 	liPageLink2.textContent = "About";
-	ulPageLinks.appendChild(liPageLink2);
-
 	liPageLink2.addEventListener("click", (e) => {
 		initializeForNewPage();
 		e.target.classList.add("active");
 		header.insertAdjacentElement("afterend", getAbout());
 	});
+	ulPageLinks.appendChild(liPageLink2);
 
 	const liPageLink3 = document.createElement("li");
 	liPageLink3.textContent = "Contact";
-	ulPageLinks.appendChild(liPageLink3);
-
 	liPageLink3.addEventListener("click", (e) => {
 		initializeForNewPage();
 		e.target.classList.add("active");
 		header.insertAdjacentElement("afterend", getContact());
 	});
+	ulPageLinks.appendChild(liPageLink3);
 
 	header.appendChild(ulPageLinks);
 
@@ -68,8 +65,7 @@ function getHeader() {
 		liPageLink1.classList.remove("active");
 		liPageLink2.classList.remove("active");
 		liPageLink3.classList.remove("active");
-		const oldMain = document.querySelector("main");
-		contentDiv.removeChild(oldMain);
+		contentDiv.removeChild(document.querySelector("main"));
 	}
 
 	return header;
