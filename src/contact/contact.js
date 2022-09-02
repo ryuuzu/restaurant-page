@@ -56,6 +56,7 @@ const outletInfos = [
 ];
 
 export default function getContact() {
+	console.log("Building contace page");
 	const main = document.createElement("main");
 
 	const contactContainer = document.createElement("div");
@@ -106,6 +107,6 @@ export default function getContact() {
 	contactContainer.appendChild(outletLocationHolder);
 
 	main.appendChild(contactContainer);
-
+	console.log(main);
 	return main;
 }

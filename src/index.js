@@ -53,6 +53,7 @@ function getHeader() {
 	const liPageLink3 = document.createElement("li");
 	liPageLink3.textContent = "Contact";
 	liPageLink3.addEventListener("click", (e) => {
+		console.log("Switching to Contact Page");
 		initializeForNewPage();
 		e.target.classList.add("active");
 		header.insertAdjacentElement("afterend", getContact());
