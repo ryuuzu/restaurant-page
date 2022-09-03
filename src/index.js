@@ -7,6 +7,7 @@ import getAbout from "./about/about";
 import getContact from "./contact/contact";
 
 const contentDiv = document.querySelector("#content");
+const loadFirst = getProducts;
 
 function getHeader() {
 	const header = document.createElement("header");
@@ -113,5 +114,5 @@ function getFooter() {
 }
 
 contentDiv.appendChild(getHeader());
-contentDiv.appendChild(getHome());
+contentDiv.appendChild(loadFirst());
 contentDiv.appendChild(getFooter());
