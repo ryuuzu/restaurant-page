@@ -10,6 +10,7 @@ module.exports = {
 		products: "./src/products/products.js",
 		about: "./src/about/about.js",
 		contact: "./src/contact/contact.js",
+		disclaimer: "./src/disclaimer/disclaimer.js"
 	},
 	devtool: "inline-source-map",
 	// devServer: {
