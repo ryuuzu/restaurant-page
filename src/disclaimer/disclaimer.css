@@ -1,0 +1,39 @@
+.disclaimer {
+	position: fixed;
+	text-align: center;
+	padding-block: 20px;
+	color: white;
+	width: 100%;
+	bottom: 0;
+	transition: 500ms ease-in-out;
+	z-index: 1;
+	background-color: #ad1e22;
+}
+
+.disclaimer-text > a {
+	color: white;
+}
+
+.disclaimer-text > a:hover {
+	color: #ffffff7f;
+	transition: color 200ms ease-in-out;
+}
+
+.disclaimer .close-btn {
+	position: fixed;
+	right: 2vw;
+	padding: 0;
+	transform: scale(1.1);
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.close-btn > svg {
+	filter: invert(100%) sepia(3%) saturate(7500%) hue-rotate(188deg)
+		brightness(106%) contrast(102%);
+	cursor: pointer;
+}
+
+.close-btn > svg:hover {
+	opacity: 50%;
+}
